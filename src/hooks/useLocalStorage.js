@@ -27,6 +27,7 @@ const useLocalStorage = (key, initialValue) => {
     localStorage.setItem(prefixKey, JSON.stringify(value));
   }, [prefixKey, value]);
 
+  // localStorage.removeItem(prefixKey);
   return [value, setValue];
 };
 
